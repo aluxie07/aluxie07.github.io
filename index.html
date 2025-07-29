@@ -1,9 +1,41 @@
-  <link rel="stylesheet" href="styles.css">
+  
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<!-- get icons from https://www.favicon.cc -->
+<link rel="manifest" href="manifest.json" /> <!--for android-->
 
-<header><h1>My Web App!</h1></header>
-<main>
-Contents here
-</main>
-<footer>
-<img id="qrCodeImg" src="images/frame.png">
-</footer>
+</head>
+
+<body>
+    <header>
+        <h1>Main Topic</h1>
+    </header>
+        <nav> <!--menu system-->
+            <ul>
+                <li><button id="page1btn">Sub Topic 1</button></li>
+                <li><button id="page2btn">Sub Topic 2</button></li>
+                <li><button id="page3btn">Sub Topic 3</button></li>
+            </ul>
+        </nav>
+    <main id="pagecontainer">
+        <section class="page" id="page1">
+        page 1 content
+        </section>
+        <section class="page" id="page2">
+        page 2 content
+        </section>
+        <section class="page" id="page3">
+        page 3 content
+        </section>
+    </main>
+
+    <footer>
+        Footer
+    </footer>
+</body>

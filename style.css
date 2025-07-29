@@ -1,9 +1,39 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebas-neue-v15-latin-regular.woff2') format('woff2'); 
+  font-style: normal;
+  font-weight: normal;
+}
+
+nav ul li{display:inline;}
+#page1{background:red}
+#page2{background:green}
+#page3{background:blue}
+
+* { /* default all elements to have no margin or padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
-h1{background:cyan;}
-@media (max-width:800px){
-#qrCodeImg{display:none;} /*hide QR
-code when its mobile size */
-h1{background: lightgreen;}
-h1::after{content:"(mobile)";}
+.index {  /* Use grid for each page */
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: 100px 100px auto 100px;
+  min-height: 100vh;
+}
+
+header {
+   grid-area: header; 
+   background-color: black; 
+   color:white;
+      font-family: 'Bebas Neue', 'sans-serif';
+   display:grid;
+   place-items: center;
+   height: 10%
 }
