@@ -25,3 +25,19 @@ hideall(); //we don't know which page is shown, so hideall
 page3.style.display="block";
 });
 hideall(); //call hideall function to hide all pages
+
+
+window.onscroll = scrollopacity;
+
+function scrollopacity() {
+   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const maxScroll = 300;
+  const opacity = Math.min(0.2 + (scrollTop / maxScroll) * 0.8, 1);
+
+  const images = document.getElementsByClassName("bg-image");
+  for (let i = 0; i < images.length; i++) {
+    images[i].style.opacity = opacity;
+  }
+}
+
+
