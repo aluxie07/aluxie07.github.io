@@ -20,10 +20,9 @@ nav ul li{display:inline;}
 .index {  /* Use grid for each page */
   display: grid;
   grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
+    "header header header"
+    "nav main main"
+    "footer footer footer";
   grid-template-rows: 100px 100px auto 100px;
   min-height: 100vh;
 }
