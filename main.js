@@ -30,23 +30,31 @@ hideall(); //call hideall function to hide all pages
 
 window.addEventListener("load", function () {
   const bg = document.querySelector(".background-container");
-  bg.classList.add("visible");
+  bg.classList.add("load-fade");
+  bg.style.opacity = "1";
+  // Remove the class after transition completes
+  setTimeout(() => {
+    bg.classList.remove("load-fade");
+  }, 1000); // match the duration of your CSS transition
 });
 
 
-window.onscroll = scrollmain;
+bgContainer = document.querySelector('.background-container');
+maxScroll = 300; // controls when shrink/fade finishes
+minHeight = 20;  // in vh
+maxHeight = 100;
 
-function scrollmain() {
-   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  const maxScroll = 200;
-  const opacity = Math.max(1 - scrollTop / maxScroll, 0.5);
-  const images = document.getElementsByClassName("background-container");
+window.addEventListener('scroll', () => {
+  scrollRatio = Math.min(window.scrollY / maxScroll, 1);
+
+  // 🔽 Shrink the height
+  newHeight = maxHeight - (maxHeight - minHeight) * scrollRatio;
+  bgContainer.style.height = `${newHeight}vh`;
+
+  opacity = Math.max(1 - window.scrollY / 200, 0.5);
+  bgContainer.style.opacity = opacity;
+});
 
 
-  for (let i = 0; i < images.length; i++) {
-    images[i].style.opacity = opacity;
-  }
-
-}
 
 

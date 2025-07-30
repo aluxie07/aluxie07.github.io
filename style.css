@@ -12,6 +12,9 @@
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 nav ul li{display:inline;
 margin-left: 10%;}
@@ -28,6 +31,7 @@ margin-left: 10%;}
   color: #F3E2D4;
   background-color: #C5B0CD;
   border-style:none;
+  font-size: 2.5vw;
   box-shadow: 1vh 1vh 15px #415E72;
   font-family: 'Outfit', sans-serif
 }
@@ -56,11 +60,23 @@ body {
 
 .background-container {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+
 }
 
-.background-container.visible {
+.background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.background-container.load-fade {
   opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 
@@ -78,6 +94,6 @@ header {
   color: #F3E2D4;
   font-size: 3vw;
   font-family: 'Bebas Neue', sans-serif;
-  text-shadow: 2px 2px 8px black;
+  text-shadow: 4px 4px 8px black;
   z-index: 1;
 }
