@@ -6,16 +6,19 @@
 }
 
 
-nav ul li{display:inline;}
+nav ul li{display:inline;
+margin-left: 10%;}
 #page1{background:red}
 #page2{background:green}
 #page3{background:blue}
 
 .btn {
   border-radius: 25px;
-  width: 33%;
-  height: 33%;
-  margin-top: 10%
+  width: 20%;
+  height: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
 }
 
 * { /* default all elements to have no margin or padding */
@@ -50,8 +53,8 @@ nav ul li{display:inline;}
 }
 
 header {
-    position: absolute;
-  top: 50%;  /* center vertically */
+  position: absolute;
+  top: 50vh;  /* center vertically */
   left: 50%; /* center horizontally */
   transform: translate(-50%, -50%);
   color: white;
