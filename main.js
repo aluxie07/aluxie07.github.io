@@ -1,3 +1,5 @@
+
+
 //target all elements to save to constants
 const page1btn=document.querySelector("#page1btn");
 const page2btn=document.querySelector("#page2btn");
@@ -26,14 +28,18 @@ page3.style.display="block";
 });
 hideall(); //call hideall function to hide all pages
 
+window.addEventListener("load", function () {
+  const bg = document.querySelector(".background-container");
+  bg.classList.add("visible");
+});
+
 
 window.onscroll = scrollmain;
 
 function scrollmain() {
    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  const maxScroll = 300;
-  const opacity = Math.min(0.8 + (scrollTop / maxScroll) * 0.2, 1);
-
+  const maxScroll = 200;
+  const opacity = Math.max(1 - scrollTop / maxScroll, 0.5);
   const images = document.getElementsByClassName("background-container");
 
 
