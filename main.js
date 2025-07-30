@@ -27,17 +27,20 @@ page3.style.display="block";
 hideall(); //call hideall function to hide all pages
 
 
-window.onscroll = scrollopacity;
+window.onscroll = scrollmain;
 
-function scrollopacity() {
+function scrollmain() {
    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   const maxScroll = 300;
-  const opacity = Math.min(0.2 + (scrollTop / maxScroll) * 0.8, 1);
+  const opacity = Math.min(0.8 + (scrollTop / maxScroll) * 0.2, 1);
 
-  const images = document.getElementsByClassName("bg-image");
+  const images = document.getElementsByClassName("background-container");
+
+
   for (let i = 0; i < images.length; i++) {
     images[i].style.opacity = opacity;
   }
+
 }
 
 
