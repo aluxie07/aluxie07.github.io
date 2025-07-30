@@ -104,11 +104,22 @@ body {
       background-color: #17313E;
 }
 
+.page {
+    font-family: 'Bebas Neue', sans-serif;
+    max-width: 50%;
+    margin-left: 25%;
+    color: #F3E2D3;
+    background-color: #C5B0CD;
+    padding: 5%;
+    border-radius: 25px;
+    text-align: left;
+}
 
 
 /******************************FOOTER******************************/
 
 .qr-code {
+  margin-top: 5vh;
   margin-left: 40vw;
   margin-bottom: 5vh;
 }
