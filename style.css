@@ -12,40 +12,6 @@
   font-weight: normal;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-nav ul li{display:inline;
-margin-left: 10%;}
-#page1{background:red}
-#page2{background:green}
-#page3{background:blue}
-
-.btn {
-  border-radius: 25px;
-  width: 20%;
-  height: 20%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  color: #F3E2D4;
-  background-color: #C5B0CD;
-  border-style:none;
-  font-size: 2.5vw;
-  box-shadow: 1vh 1vh 15px #415E72;
-  font-family: 'Outfit', sans-serif
-}
-
-* { /* default all elements to have no margin or padding */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-      background-color: #17313E;
-}
-
 
 .index {  /* Use grid for each page */
   display: grid;
@@ -56,6 +22,33 @@ body {
     "footer";
   grid-template-rows: 100px 100px auto 100px;
   min-height: 100vh;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+* { /* default all elements to have no margin or padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******************************HEADER******************************/
+
+header {
+  position: absolute;
+  top: 50vh;  /* center vertically */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #F3E2D4;
+  font-size: 4vw;
+  font-family: 'Bebas Neue', sans-serif;
+  text-shadow: 4px 4px 8px black;
+  z-index: 1;
+  width: 80%;
 }
 
 .background-container {
@@ -85,16 +78,37 @@ body {
     max-height: 80%;
 }
 
-header {
-  position: absolute;
-  top: 50vh;  /* center vertically */
-  left: 50%; /* center horizontally */
-  transform: translate(-50%, -50%);
-  text-align: center;
+/******************************NAV******************************/
+
+nav ul li{display:inline;
+margin-left: 10%;}
+
+
+.btn {
+  border-radius: 25px;
+  width: 20%;
+  height: 20%;
+  margin-top: 10%;
+  margin-bottom: 5%;
   color: #F3E2D4;
-  font-size: 4vw;
-  font-family: 'Bebas Neue', sans-serif;
-  text-shadow: 4px 4px 8px black;
-  z-index: 1;
-  width: 80%;
+  background-color: #C5B0CD;
+  border-style:none;
+  font-size: 2.5vw;
+  box-shadow: 1vh 1vh 15px #415E72;
+  font-family: 'Outfit', sans-serif
+}
+
+/******************************PAGES******************************/
+
+body {
+      background-color: #17313E;
+}
+
+
+
+/******************************FOOTER******************************/
+
+.qr-code {
+  margin-left: 40vw;
+  margin-bottom: 5vh;
 }
