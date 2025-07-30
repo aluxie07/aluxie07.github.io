@@ -40,7 +40,7 @@ window.addEventListener("load", function () {
 
 
 bgContainer = document.querySelector('.background-container');
-maxScroll = 300; // controls when shrink/fade finishes
+maxScroll = 100; // controls when shrink/fade finishes
 minHeight = 20;  // in vh
 maxHeight = 100;
 
