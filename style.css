@@ -5,6 +5,13 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Outfit';
+  src: url('../fonts/outfit-v14-latin-600.woff2') format('woff2'); 
+  font-style: normal;
+  font-weight: normal;
+}
+
 
 nav ul li{display:inline;
 margin-left: 10%;}
@@ -18,7 +25,11 @@ margin-left: 10%;}
   height: 20%;
   margin-top: 5%;
   margin-bottom: 5%;
-  
+  color: white;
+  background-color: grey;
+  border-style:none;
+  box-shadow: 1vh 1vh 15px #ffedd6;
+  font: 'Outfit', sans-serif
 }
 
 * { /* default all elements to have no margin or padding */
