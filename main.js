@@ -55,6 +55,14 @@ window.addEventListener('scroll', () => {
   bgContainer.style.opacity = opacity;
 });
 
+// function fadeInElement(button, page) {
+//   document.getElementById(button).addEventListener("click", function () {
+//     const section = document.querySelector(page);
+//     section.classList.add("visible");
+//   });
+// }
+
+// fadeInElement("page1btn", "#page1");
 
 
 
