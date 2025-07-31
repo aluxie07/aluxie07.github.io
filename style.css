@@ -13,6 +13,14 @@
 }
 
 
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('../fonts/josefin-sans-v33-latin-regular.woff2') format('woff2'); 
+  font-style: normal;
+  font-weight: normal;
+}
+
+
 .index {  /* Use grid for each page */
   display: grid;
   grid-template-areas:
@@ -97,15 +105,16 @@ margin-left: 10%;}
   box-shadow: 1vh 1vh 15px #415E72;
   font-family: 'Outfit', sans-serif;
   transition: .2s ease-in-out;
+  opacity: 0.8;
 }
 
 .btn:hover {
-  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    rotate: 2deg ;
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    opacity: 1;
 }
 
 .btn:active {
-    transform: translateY(4px);
+    transform: translateY(1px);
 }
 
 /******************************PAGES******************************/
@@ -115,7 +124,7 @@ body {
 }
 
 .page {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.3vw;
     max-width: 50%;
     margin-left: 25%;
@@ -127,6 +136,10 @@ body {
     opacity: 1;
     transition: opacity 0.7s ease-in-out;
 
+}
+
+.page h2 {
+  margin-bottom: 5%;
 }
 
 /* .page.visible {
