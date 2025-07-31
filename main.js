@@ -8,23 +8,42 @@ const page1=document.querySelector("#page1");
 const page2=document.querySelector("#page2");
 const page3=document.querySelector("#page3");
 function hideall(){ //function to hide all pages
-page1.style.display="none";
-page2.style.display="none";
-page3.style.display="none";
+    page1.style.display="none";
+    page2.style.display="none";
+    page3.style.display="none";
+
+    page1.classList.remove("active");
+    page2.classList.remove("active");
+    page3.classList.remove("active");
 }
 /*Listen for clicks on the buttons, assign anonymous
 eventhandler functions to call show function*/
 page1btn.addEventListener("click", function () {
-hideall(); //we don't know which page is shown, so hideall
-page1.style.display="block";
+  hideall(); //we don't know which page is shown, so hideall
+  page1.style.display = "grid";
+    setTimeout(() => {
+    page1.classList.add("active");
+  }, 10); // 10ms is enough
+
+
 });
 page2btn.addEventListener("click", function () {
-hideall(); //we don't know which page is shown, so hideall
-page2.style.display="block";
+  hideall(); //we don't know which page is shown, so hideall
+  page2.style.display = "grid";
+  setTimeout(() => {
+    page2.classList.add("active");
+  }, 10); // 10ms is enough
+
+
 });
 page3btn.addEventListener("click", function () {
-hideall(); //we don't know which page is shown, so hideall
-page3.style.display="block";
+  hideall(); //we don't know which page is shown, so hideall
+  page3.style.display = "grid";
+  setTimeout(() => {
+    page3.classList.add("active");
+  }, 10); // 10ms is enough
+
+
 });
 hideall(); //call hideall function to hide all pages
 
