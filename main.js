@@ -74,6 +74,15 @@ window.addEventListener('scroll', () => {
   bgContainer.style.opacity = opacity;
 });
 
+function playDemo(elementId) {
+    var sound = document.getElementById(elementId);
+     if (sound.paused) {
+    sound.play();
+  } else {
+    sound.pause();
+  }
+
+}
 // function fadeInElement(button, page) {
 //   document.getElementById(button).addEventListener("click", function () {
 //     const section = document.querySelector(page);

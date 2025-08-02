@@ -139,7 +139,7 @@ body {
   opacity: 1;
 }
 
-.page-section {
+#page1 .page-section {
     background-color: #C5B0CD;
     display: grid;
     grid-template-areas: "title title" "text image";
@@ -148,6 +148,20 @@ body {
     padding: 5%;
     border-radius: 25px;
 }
+
+#page2 .page-section {
+    margin-left: 25%;
+    max-width: 50%;
+    background-color: #C5B0CD;
+    display: grid;
+    grid-template-areas: "title play" "text image";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+
 
 #rickenbacker {
   width: auto;
@@ -165,10 +179,25 @@ body {
   margin-left: 10%;
 }
 
-#page1 div {
+#tele {
+  width: auto;
+  height: 35vh;
+  margin-left: 30%;
+}
+
+div {
   grid-area: image;
 }
 
+.sound-demo {
+  grid-area: play;
+}
+
+.play-button {
+  width:auto;
+  height: 5vh;
+  margin-left: 60%;
+}
 
 .text {
   grid-area: text;
@@ -177,8 +206,8 @@ body {
 }
 
 
-#page1 h2 {
-  margin-bottom: 5%;
+h2 {
+  margin-bottom: 5vh;
   grid-area: title;
   font-size: 1.6vw;
 }
