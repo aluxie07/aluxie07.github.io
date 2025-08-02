@@ -20,7 +20,7 @@ function hideall(){ //function to hide all pages
 eventhandler functions to call show function*/
 page1btn.addEventListener("click", function () {
   hideall(); //we don't know which page is shown, so hideall
-  page1.style.display = "grid";
+  page1.style.display = "flex";
     setTimeout(() => {
     page1.classList.add("active");
   }, 10); // 10ms is enough
@@ -29,7 +29,7 @@ page1btn.addEventListener("click", function () {
 });
 page2btn.addEventListener("click", function () {
   hideall(); //we don't know which page is shown, so hideall
-  page2.style.display = "grid";
+  page2.style.display = "flex";
   setTimeout(() => {
     page2.classList.add("active");
   }, 10); // 10ms is enough
@@ -38,7 +38,7 @@ page2btn.addEventListener("click", function () {
 });
 page3btn.addEventListener("click", function () {
   hideall(); //we don't know which page is shown, so hideall
-  page3.style.display = "grid";
+  page3.style.display = "flex";
   setTimeout(() => {
     page3.classList.add("active");
   }, 10); // 10ms is enough

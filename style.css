@@ -123,26 +123,16 @@ body {
 
 .page {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.3vw;
-    max-width: 60%;
-    margin-left: 20%;
+    max-width: 70%;
+    margin: auto;
     color: #F3E2D3;
-    background-color: #C5B0CD;
     padding: 5%;
-    border-radius: 25px;
-    text-align: left;
     opacity: 0;
     transition: opacity 0.7s ease-in-out;
-    display: grid;
-    grid-template-areas:
-    "title title"
-    "text image";
-    grid-template-columns: 2fr 1fr;   /* Wider text column, narrower image */
-    grid-template-rows: auto 1fr;
-    gap: 20px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
     visibility: hidden;
-
 }
 
 .page.active {
@@ -150,27 +140,46 @@ body {
   opacity: 1;
 }
 
+.page-section {
+    background-color: #C5B0CD;
+    display: grid;
+    grid-template-areas: "title title" "text image";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+#p1-1 {
+
+}
+
+#p1-2 {
+
+}
 
 #rickenbacker {
-  width: 15vw;
+  width: auto;
   height: 50vh;
 
 }
 
-.page div {
+#page1 div {
   grid-area: image;
 }
 
 
-.page p {
+.text {
   grid-area: text;
+  font-size: 1.2vw;
+  margin-right: 5%;
 }
 
 
-.page h2 {
+#page1 h2 {
   margin-bottom: 5%;
-    grid-area: title;
-
+  grid-area: title;
+  font-size: 1.6vw;
 }
 
 /******************************FOOTER******************************/
