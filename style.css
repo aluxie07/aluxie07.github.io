@@ -92,7 +92,7 @@ margin-left: 10%;}
 .btn {
   border-radius: 25px;
   width: 20%;
-  height: 20%;
+  height: 20vh;
   margin-top: 10%;
   margin-bottom: 5%;
   color: #F3E2D4;
@@ -149,18 +149,20 @@ body {
     border-radius: 25px;
 }
 
-#p1-1 {
-
-}
-
-#p1-2 {
-
-}
-
 #rickenbacker {
   width: auto;
   height: 50vh;
+}
 
+#evh {
+  width: auto;
+  height: 50vh;
+}
+
+#modern {
+  width: auto;
+  height: 45vh;
+  margin-left: 10%;
 }
 
 #page1 div {
