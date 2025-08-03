@@ -33,11 +33,6 @@
 }
 
 
-html {
-  scroll-behavior: smooth;
-  width: 100%;
-}
-
 * { /* default all elements to have no margin or padding */
   margin: 0;
   padding: 0;
@@ -234,5 +229,13 @@ h2 {
   
     .btn {
       height: 10vh
+    }
+
+    .text {
+      font-size: 1.5vw;
+    }
+
+    h2 {
+      font-size: 2vw;
     }
 }

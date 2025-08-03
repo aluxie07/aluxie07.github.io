@@ -59,12 +59,12 @@ window.addEventListener("load", function () {
 
 
 const bgContainer = document.querySelector('.background-container');
-maxScroll = 100; // controls when shrink/fade finishes
+maxScroll = 400; // controls when shrink/fade finishes
 minHeight = 20;  // in vh
 maxHeight = 100;
 
 window.addEventListener('scroll', () => {
-  scrollRatio = Math.min(window.scrollY / maxScroll, 1);
+  scrollRatio = Math.min(window.scrollY / maxScroll, 0.5);
 
   // 🔽 Shrink the height
   newHeight = maxHeight - (maxHeight - minHeight) * scrollRatio;
