@@ -81,7 +81,6 @@ function playDemo(elementId) {
   } else {
     sound.pause();
   }
-
 }
 // function fadeInElement(button, page) {
 //   document.getElementById(button).addEventListener("click", function () {
