@@ -115,10 +115,6 @@ margin-left: 10%;}
 
 /******************************PAGES******************************/
 
-#page-container {
-  
-}
-
 body {
       background-color: #17313E;
 }
@@ -227,12 +223,24 @@ h2 {
   font-size: 1.6vw;
   grid-area: title;
 }
-
 /******************************FOOTER******************************/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-info {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6vw;
+  color: #F3E2D4;
+  margin-bottom: 5%;
+}
 
 .qr-code {
   margin-top: 5vh;
-  margin-left: 38vw;
   margin-bottom: 5vh;
 }
 
@@ -284,4 +292,8 @@ h2 {
     grid-template-rows: auto auto auto;
   }
 
+
+  .student-info {
+  font-size: 4.6vw;
+  }
 }
