@@ -63,12 +63,14 @@ maxScroll = 400; // controls when shrink/fade finishes
 minHeight = 20;  // in vh
 maxHeight = 100;
 
+var mobile = window.matchMedia("(max-width: 800px)")
+
 window.addEventListener('scroll', () => {
   scrollRatio = Math.min(window.scrollY / maxScroll, 0.5);
-
-  // 🔽 Shrink the height
+   if (!mobile.matches) {
   newHeight = maxHeight - (maxHeight - minHeight) * scrollRatio;
   bgContainer.style.height = `${newHeight}vh`;
+   }
 
   opacity = Math.max(1 - window.scrollY / 200, 0.5);
   bgContainer.style.opacity = opacity;
@@ -82,14 +84,6 @@ function playDemo(elementId) {
     sound.pause();
   }
 }
-// function fadeInElement(button, page) {
-//   document.getElementById(button).addEventListener("click", function () {
-//     const section = document.querySelector(page);
-//     section.classList.add("visible");
-//   });
-// }
-
-// fadeInElement("page1btn", "#page1");
 
 
 

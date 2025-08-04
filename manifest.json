@@ -1,0 +1,14 @@
+{ 
+"name": "Electric Guitar",
+"short_name": "E-Guitar",
+"start_url": "https://aluxie07.github.io",
+"display": "standalone",
+"background_color": "#ffffff",
+"theme_color": "#00FF00",
+"icons": [
+{   "src": "images/favicon.ico",
+  "sizes": "64x64",
+  "type": "image/x-icon"
+}
+]
+}
